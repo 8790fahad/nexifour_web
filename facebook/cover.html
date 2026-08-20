@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexifour Facebook Cover 820×312</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@500;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #1a1f2a;
+      font-family: "DM Sans", sans-serif;
+      color: #e8eef8;
+    }
+    .frame {
+      width: 820px;
+      height: 312px;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      background:
+        radial-gradient(circle at 82% 35%, rgba(34,184,232,.22), transparent 28%),
+        radial-gradient(circle at 18% 70%, rgba(27,79,191,.28), transparent 32%),
+        linear-gradient(135deg, #070d18, #0a1628 55%, #102038);
+      box-shadow: 0 30px 80px rgba(0,0,0,.45);
+    }
+    .grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      opacity: .5;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      gap: 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .brand img { width: 72px; height: 72px; }
+    h1 {
+      margin: 0 0 8px;
+      font-family: Syne, sans-serif;
+      font-size: 34px;
+      letter-spacing: -0.03em;
+    }
+    p {
+      margin: 0;
+      color: #93a0b8;
+      font-size: 16px;
+      max-width: 34ch;
+    }
+    .accent {
+      color: #22b8e8;
+      font-weight: 600;
+      margin-top: 10px;
+      display: block;
+    }
+    svg { width: 180px; height: 180px; flex-shrink: 0; }
+    .note {
+      margin-top: 18px;
+      color: #93a0b8;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="frame" id="cover">
+      <div class="grid"></div>
+      <div class="content">
+        <div>
+          <div class="brand">
+            <img src="../public/logo.png" alt="Nexifour" />
+            <div>
+              <h1>Nexifour Technologies</h1>
+              <p>Enterprise software, cybersecurity, cloud & digital transformation.</p>
+              <span class="accent">Powering Enterprises Through Technology.</span>
+            </div>
+          </div>
+        </div>
+        <svg viewBox="0 0 200 200" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1B4FBF"/>
+              <stop offset="100%" stop-color="#22B8E8"/>
+            </linearGradient>
+          </defs>
+          <path d="M48 40 V160 M48 40 L152 160 M152 40 V160" fill="none" stroke="url(#g)" stroke-width="14" stroke-linecap="round"/>
+          <circle cx="48" cy="40" r="10" fill="#0F1F38"/>
+          <circle cx="48" cy="160" r="10" fill="#0F1F38"/>
+          <circle cx="152" cy="40" r="10" fill="#0F1F38"/>
+          <circle cx="152" cy="160" r="10" fill="#F5A623"/>
+        </svg>
+      </div>
+    </div>
+    <p class="note">Facebook cover canvas · 820×312 · screenshot this frame for upload</p>
+  </div>
+</body>
+</html>
